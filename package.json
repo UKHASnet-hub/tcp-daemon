@@ -1,0 +1,30 @@
+{
+  "name": "tcp-daemon",
+  "version": "0.1.0",
+  "description": "TCP Server Daemon for ukhas.net",
+  "contributors": [
+    {
+      "name": "Phil Crump",
+      "email": "phildcrump@gmail.com"
+    }
+  ],
+  "scripts": {
+    "start": "node ./tcp-daemon.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:UKHASnet-hub/tcp-daemon.git"
+  },
+  "author": "UKHASnet",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/UKHASnet-hub/tcp-daemon/issues"
+  },
+  "homepage": "https://github.com/UKHASnet-hub/tcp-daemon",
+  "dependencies": {
+    "pg": "^4.4.1"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}
