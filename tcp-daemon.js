@@ -41,7 +41,7 @@ function broadcast(message) {
 	}
 
 	sockets.forEach(function(socket, index, array){
-		socket.write(message);
+		socket.write(message+'\n');
 	});
 	
 };
