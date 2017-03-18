@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var pg = require('pg')
 var dbConfig = require('./config.json')
 
@@ -75,7 +77,7 @@ pg.connect(dbConfig, function(err, client) {
     client.on('notification', function(msg) {
         switch(msg.channel) {
             case "upload_row":
-                broadcast(clientName, msg.payload);
+                broadcast(msg.payload);
                 //logtail_namespace.emit("upload_row",msg.payload)
                 break;
             case "upload_parse":

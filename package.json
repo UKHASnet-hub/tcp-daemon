@@ -9,7 +9,7 @@
     }
   ],
   "scripts": {
-    "start": "node ./tcp-daemon.js"
+    "start": "./tcp-daemon.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/UKHASnet-hub/tcp-daemon",
   "dependencies": {
-    "pg": "^4.4.1"
+    "pg": "^4.5.6"
   },
   "engines": {
     "node": ">=0.10"
